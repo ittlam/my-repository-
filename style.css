@@ -1,0 +1,171 @@
+html{
+    box-sizing: border-box;
+    background-color: rgba(36, 33, 49, 1);
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+body{
+    min-width: 1400px;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* для добавления тени */
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo-a{
+    display: flex;
+    justify-content: center;
+
+}
+
+li{
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.menu-list li{
+    list-style-type: none;
+    font-size: 22px;
+}
+
+.container{
+    max-width: 1400px;
+    padding: 30px 100px;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-list{
+    display: flex;
+    gap: 0 45px;
+}
+
+.a-button-sign-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+    background: rgb(52, 218, 116);
+    border-radius: 25px;
+    margin-top: auto;
+    margin-bottom: auto;   
+    font-size: 22px;
+    font-weight: 600;
+
+    transition: background 1s ease;
+}
+
+.a-button-sign-in:hover{
+    background: rgb(17, 153, 96)
+}   
+
+.section-main{
+    max-width: 1400px;
+    padding: 30px 100px;
+    margin: 0 auto;
+
+}
+
+.text-in-section{
+    margin: 150px 0;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.small-p-text{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.section-main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-order{
+    width: 260px;
+    height: 60px;
+    background-color: rgb(52, 218, 116);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-configurator{
+    margin: 0;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(148, 135, 255, 1);
+    padding: 60px 80px;
+}
+
+.configurator-border{
+    border: solid 10px rgb(72, 255, 142);
+    border-radius: 35px;
+    height: 380px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+/* .configurator-border div{
+    border: solid 10px red;
+} */
+
+.configurator-text{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.configurator-text p{
+    font-size: 25px;
+    font-weight: 800px;
+}
+
+.configurator-h2{
+    font-size: 35px;
+    font-weight: 800;
+    font-stretch: extra-expanded
+}
+
+.configurator-button{
+    background-color: rgb(72, 255, 142);
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.configurator{
+    font-size: 26px;
+    color: rgb(72, 255, 142);
+}
+
+
+
