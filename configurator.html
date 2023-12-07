@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
     <title>Configurator - JustPc</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/configurator-style.css">
 </head>
 <body>
     <header class="header">
@@ -27,5 +31,77 @@
             </nav>
         </div>
     </header>
+
+    <main>
+        <form class="container-configurator">
+            <div class="price-configurator conf">
+                <p class="configurator-price-p">Цена</p>
+                <div class="quantity-money">
+                    <img src="/img/money-icon.svg" alt="" class="money-icon">
+                    <input type="number" id="quantity-input" placeholder="99 999₽">
+                </div>
+                
+                <p class="purpose-p">Цель сборки</p>
+                <div class="variants-purpose">
+                    <div class="gaming-variant variant">
+                        <input class="cr" type="radio" name="a-radio" id="gaming-variant-circle"></input>
+                        <label class="cr" for="gaming-variant-circle" >Игровой</label>
+                    </div>
+                    <div class="line-purpose"></div>
+                    <div class="office-variant variant">
+                        <input class="cr" type="radio" name="a-radio" id="office-variant-circle"></input>
+                        <label class="cr" for="office-variant-circle">Офисный</label>
+                    </div>
+                    <div class="line-purpose"></div>
+                    <div class="pro-variant variant">
+                        <input class="cr" type="radio" name="a-radio" id="pro-variant-circle"></input>
+                        <label class="cr" for="pro-variant-circle">Проф задачи</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="config-configurator conf">
+                <p class="configurator-price-p">Конфигурация</p>
+                <div class="variants-purpose">
+                    <h3>Переферия</h3>
+                    <div class="monitor-variant variant">
+                        <input class="cr" type="checkbox" name="monitor-variant" id="monitor-variant box-style"></input>
+                        <label class="cr" for="monitor-variant box-style" >Монитор</label>
+                    </div>
+                    <div class="line-purpose"></div>
+                    <div class="headphones-variant variant">
+                        <input class="cr" type="checkbox" name="headphones-variant" id="headphones-variant box-style"></input>
+                        <label class="cr"l for="headphones-variant box-style">Наушники</label>
+                    </div>
+                    <div class="line-purpose"></div>
+                    <div class="mouse-variant variant">
+                        <input class="cr" type="checkbox" name="mouse-variant" id="mouse-variant box-style"></input>
+                        <label class="cr" for="mouse-variant box-style">Мышка, Клавиатура</label>
+                    </div>
+                </div>
+
+                <div class="variants-purpose">
+                    <div class="windows-variant variant">
+                        <input class="cr" type="checkbox" name="windows-variant" id="windows-variant box-style"></input>
+                        <label class="cr" for="windows-variant box-style" >Windows</label>
+                    </div>
+                    <div class="line-purpose"></div>
+                    <div class="office-pack-variant variant">
+                        <input class="cr" type="checkbox" name="office-pack-variant" id="office-pack-variant box-style"></input>
+                        <label class="cr"l for="office-pack-variant box-style">Office</label>
+                    </div>
+                    <div class="line-purpose"></div>
+                    <div class="adobe-variant variant">
+                        <input class="cr" type="checkbox" name="adobe-variant" id="adobe-variant box-style"></input>
+                        <label class="cr" for="adobe-variant box-style">Adobe</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="advice-configurator conf">
+                <p class="configurator-price-p">Советы</p>
+            </div>
+        </form>
+    </main>
 </body>
 </html>

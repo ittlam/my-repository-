@@ -1,0 +1,254 @@
+html{
+    box-sizing: border-box;
+    background-color: rgba(36, 33, 49, 1);
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+body{
+    min-width: 1400px;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* для добавления тени */
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.logo-a{
+    display: flex;
+    justify-content: center;
+
+}
+
+li{
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.menu-list li{
+    list-style-type: none;
+    font-size: 22px;
+}
+
+.configurator{
+    font-size: 26px;
+    color: rgb(72, 255, 142);
+}
+
+.container{
+    max-width: 1400px;
+    padding: 30px 100px;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-list{
+    display: flex;
+    gap: 0 45px;
+}
+
+.a-button-sign-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+    background: rgb(52, 218, 116);
+    border-radius: 25px;
+    margin-top: auto;
+    margin-bottom: auto;   
+    font-size: 22px;
+    font-weight: 600;
+
+    transition: background 1s ease;
+}
+
+.a-button-sign-in:hover{
+    background: rgb(17, 153, 96)
+}   
+
+.container-configurator{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 1432px;
+    height: 600px;
+    -webkit-user-select: none;
+    user-select: none;
+
+    font-weight: 400;
+}
+
+.configurator-price-p, .purpose-p{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.conf:nth-child(2n+1){
+    margin-top: 80px;
+    text-align: center;
+    border-radius: 30px;
+    width: 392px;
+    height: 600px;
+    border-radius: 35px;
+    background: linear-gradient(93deg, #11998E -38.31%, #38EF7D 115.32%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.conf:nth-child(2){
+    margin-top: 80px;
+    text-align: center;
+    border-radius: 30px;
+    width: 392px;
+    height: 600px;
+    border-radius: 35px;
+    background: linear-gradient(160deg, #11998E -5.98%, #38EF7D 87.28%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.circle-quantity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(47, 196, 104);
+}
+
+.quantity-money{
+    display: flex;
+    justify-content: center; 
+}
+
+.money-icon{
+    background-color: white;
+    border-radius: 30px 0 0 30px;
+    width: 50px;
+    padding: 5px;
+}
+
+#quantity-input{
+    border: none;
+    border-radius: 0 30px 30px 0 ;
+    padding: 10px;
+    font-size: 23px;
+    font-weight: 400;
+    width: 280px;
+}
+
+.variants-purpose{
+    display: grid;
+    justify-content: start;
+    padding: 15px 0;
+    margin: 0 auto;
+    width: 300px;
+    height: 170px;
+    background-color: white;
+    color: rgba(36, 33, 49, 1);
+    border-radius: 25px;
+
+    font-size: 20px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.variants-purpose label {
+    margin-left:20px;
+}
+
+.variants-purpose:nth-child(3){
+    margin-top: 40px;
+}
+
+.variants-purpose h3{
+    margin: 0 0 10px 23px;
+}
+
+.line-purpose{
+    width: 250px;
+    height: 5px;
+    background-color: #242131;
+    margin: 0;
+    margin-left: 25px;
+    border-radius: 25px;
+}
+
+.variants-purpose input[type="radio"]{
+    -webkit-appearance: none; /* убираем стандартные стили браузера */
+    -moz-appearance: none;
+    appearance: none;
+
+    width: 22px;
+    height: 22px;
+    background-color: #34B67A;
+    border-radius: 50%;
+}
+
+.variants-purpose input[type="radio"]:checked::before{
+    content: '';
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: white ; 
+    border-radius: 50%;
+    margin: 4px;
+}
+
+.variant{
+    display: flex;
+    
+    margin-left: 30px;
+    padding: 0;
+
+}
+
+.cr{
+    cursor: pointer;
+}
+
+input[type="checkbox"]{
+    -webkit-appearance: none; /* убираем стандартные стили браузера */
+    -moz-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    background-color: #34B67A;
+    border-radius: 3px;
+}
+
+input[type="checkbox"]:checked::before{
+    content: '';
+    display: block;
+    margin: 3px;
+    width: 17px;
+    height: 17px;
+    background-image: url("/img/check\ mark.svg");
+}
