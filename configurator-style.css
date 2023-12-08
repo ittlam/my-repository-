@@ -180,6 +180,23 @@ li{
     user-select: none;
 }
 
+.preferens-purpose{
+    display: grid;
+    justify-content: start;
+    padding: 15px 0;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 230px;
+    background-color: white;
+    color: rgba(36, 33, 49, 1);
+    border-radius: 25px;
+}
+
+.preferens-purpose h3{
+    margin: 0 0 10px 23px;    
+}
+
 .variants-purpose label {
     margin-left:20px;
 }
@@ -251,4 +268,42 @@ input[type="checkbox"]:checked::before{
     width: 17px;
     height: 17px;
     background-image: url("/img/check\ mark.svg");
+}
+
+.advice{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 25px 0;
+    width: 300px;
+    height: 480px;
+    background-color: white;
+    color: rgba(36, 33, 49, 1);
+    border-radius: 25px;
+}
+
+.line{
+    width: 250px;
+    height: 5px;
+    background-color: #242131;
+    margin: 15px 0;
+    border-radius: 25px;
+}
+
+.advices{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    width: 230px;
+    text-align: start;
+    animation: changeTextAnimation 9s infinite;
+}
+
+@keyframes changeTextAnimation {
+    0% { opacity: 0; }
+    5% { opacity: 0; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
 }
